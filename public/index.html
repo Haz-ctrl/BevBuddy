@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to BevBuddy</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Welcome to BevBuddy</h1>
+        <p>Please enter your monthly budget:</p>
+        <form>
+            <div class="mb-3">
+                <label for="monthlyBudget" class="form-label">Monthly Budget</label>
+                <input type="number" class="form-control" id="monthlyBudget" name="monthlyBudget" placeholder="Enter monthly budget (0 - 3000)">
+            </div>
+            <p>How many days a week do you drink?</p>
+            <div class="mb-3">
+                <label for="daysOfWeek" class="form-label">Days of the Week</label>
+                <input type="number" class="form-control" id="daysOfWeek" name="daysOfWeek" placeholder="Enter days a week (0 - 7)">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Include Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
