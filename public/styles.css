@@ -1,0 +1,74 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.mode-toggle {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.mode-toggle i {
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+form {
+    text-align: center;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.btn-primary {
+    font-size: 18px;
+    padding: 10px 30px;
+}
+
+#nightlyBudgetResult {
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    animation: pop-up 0.5s ease-in-out;
+}
+
+.nightly-budget-label {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.nightly-budget-amount {
+    font-size: 24px;
+}
+
+
+@keyframes pop-up {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
