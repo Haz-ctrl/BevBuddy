@@ -1,0 +1,13 @@
+use 3 ssd1306 OLED screens that have the same I2C address to display the following : the i'th screen will display "display i"
+
+
+
+
+use an I2C multiplexer (such as TCA9548A) to choose which screen to update with the current information
+no I2C multiplexer available on Wokwi - tried simulating it with analog 2 multiplexers but i think the clock line multiplexer is useless, the second screen gives an error and no text is displayed on either screen
+use GPIO pins to select the screen that needs to be updated - assign a GPIO pin to each screen and drive them all high. Then sequancially drive each pin low(brind the address line down), display the new information then drive the pin high again
+i think this requires me to solder a wire to the back of the screen where the 0 ohm resisor is. i don't know what screen pin needs to be connected to the GPIO pin (could be the SDA maybe but it's just a guess). I cannot solder wires in Wokwi
+Use a library and its predefined functions to achieve the desired result 
+after analyzing the example code seemed simple to use but it straight up didn't work(again, no display, no errors, just black screens), and my debugging abilities in wokwi are below awful
+
+im trying to make streamdeck with customizeable oled lighting to extent of making imagbes etc
